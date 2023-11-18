@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Factura - Servicios de Electricidad</title>
+    <style>
+        /* Estilos CSS aquí */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 2em;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .invoice-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .invoice-details {
+            flex: 1;
+        }
+
+        .invoice-items {
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ver Factura - Servicios de Electricidad</h1>
+    </header>
+
+    <section>
+        <div class="invoice-container">
+
+            <div class="invoice-details">
+                <h2>Detalles de la Factura</h2>
+                <p><strong>Número de Factura:</strong> INV-2023-001</p>
+                <p><strong>Fecha de Emisión:</strong> 18 de noviembre de 2023</p>
+                <p><strong>Cliente:</strong> Nombre del Cliente</p>
+            </div>
+
+            <div class="invoice-items">
+                <h2>Ítems de la Factura</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Servicio de Cableado Eléctrico</td>
+                            <td>1</td>
+                            <td>$X,XXX</td>
+                            <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                            <td>Servicio de Instalación de Postes Eléctricos</td>
+                            <td>1</td>
+                            <td>$X,XXX</td>
+                            <td>$X,XXX</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Servicios de Electricidad</p>
+    </footer>
+
+</body>
+</html>

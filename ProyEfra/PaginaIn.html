@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Electricidad</title>
+    <style>
+        /* Estilos CSS aquí */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 2em;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1mm;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Servicios de Electricidad</h1>
+    </header>
+
+    <nav id="compras" class="nav-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#nuestros-servicios">Nuestros Servicios</a>
+        <a href="#nuestra-compania">Nuestra Compañía</a>
+        <a href="#inventario">Inventario</a>
+        <a href="PaginaFact.html">Factura</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <script>
+        // Obtén la barra de navegación
+        var navbar = document.getElementById('compras');
+
+        // Obtiene la posición inicial de la barra de navegación
+        var initialOffset = navbar.offsetTop;
+
+        // Agrega un evento de desplazamiento para gestionar la posición de la barra de navegación
+        window.onscroll = function() {
+            // Si el usuario ha desplazado hacia abajo más allá de la posición inicial
+            if (window.pageYOffset >= initialOffset) {
+                navbar.style.top = '0'; // Fija la barra de navegación en la parte superior
+            } else {
+                navbar.style.top = 'initial'; // Vuelve a la posición original
+            }
+        };
+    </script>
+    <section id="inicio">
+        <div>
+            <h2>Bienvenido a Servicios de Electricidad</h2>
+            <p>Ofrecemos soluciones eléctricas de alta calidad para satisfacer sus necesidades.</p>
+        </div>
+    </section>
+
+    <section id="nuestros-servicios">
+       
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <h2>Nuestros Servicios</h2>
+           <div style="border: 1px solid #ccc; padding: 10px; margin: 10px; width: 30%;">
+                
+               <a href="https://www.playstation.com/es-bo/ps4/ps4-pro/">
+                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps4-pro-console-02-en-26oct18?$1600px--t$" alt="Play Station 5, Accesorios" style="max-width: 100%;">
+                </a>
+                <h2 style="color: #333;">Play Station 4 Pro</h2>
+                <p style="color: #666;">Disfruta de los juegos taquilleros más recientes de PS4 y exclusivas de PlayStation en sorprendente 4K desde la consola PS4 Pro en tu televisor 4K, y transmite tu entretenimiento favorito con increíble detalle visual desde los servicios compatibles con 4K.</p>
+                <p style="color: #666;">Aumenta tu inmersión en los juegos de PS4 con velocidades de cuadro mejoradas* en una variedad de juegos mejorados para PS4 Pro, lo cual es posible gracias a la potencia adicional de la PS4 Pro.</p>
+                <p style="color: #f00;">Precio: $3000.00</p>
+                <button onclick="agregarAlCarrito()" style="background-color: #333; color: #fff; padding: 5px 10px;">Agregar al carrito</button>
+            </div>
+    
+            <div style="border: 1px solid #ccc; padding: 10px; margin: 10px; width: 30%;">
+                <a href="https://www.nike.com/mx/t/calzado-air-jordan-1-mid-f8W9ns/DQ8426-106">
+                    <img src="https://images.vegnonveg.com/resized/700X573/9624/air-jordan-1-mid-whitegym-red-black_1-64a7d89496d46.jpg" alt="Air Jordan 1 Mid" style="max-width: 100%;">
+                </a>
+                <h2 style="color: #333;">Air Jordan 1 Mid</h2>
+                <p style="color: #666;">Inspirada en el AJ1 original, esta edición de corte mid mantiene el look icónico que te encanta, y los colores selectos y el cuero impecable le dan una identidad distintiva.</p>
+                <p style="color: #f00;">Precio: $3119.00</p>
+                <button onclick="agregarAlCarrito()" style="background-color: #333; color: #fff; padding: 5px 10px;">Agregar al carrito</button>
+            </div>
+    
+            <!-- Agrega más productos siguiendo el mismo patrón -->
+        </div>
+    </section>
+
+    <section id="nuestra-compania">
+        <div>
+            <h2>Nuestra Compañía</h2>
+            <p>Información sobre nuestra compañía...</p>
+        </div>
+    </section>
+
+    <section id="inventario">
+        <div>
+            <h2>Inventario</h2>
+            <p>Detalles sobre nuestro inventario de productos...</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div>
+            <h2>Contacto</h2>
+            <p>Formulario de contacto o información de contacto...</p>
+        </div>
+    </section>
+
+   <br> <br><br><br><footer>
+        <p>&copy; 2023 Servicios de Electricidad</p>
+    </footer>
+
+</body>
+</html>
+
