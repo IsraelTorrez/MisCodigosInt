@@ -8,21 +8,32 @@
         /* Estilos CSS aquí */
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
-
-        header {
-            background-color: #333;
+        .nav-menu {
+            background-color: #073776;
             color: #fff;
             text-align: center;
-            padding: 1em;
+            padding: 10px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header {
+            background-color: #ec971f;
+            color: #fff;
+            text-align: center;
+            padding: 0.04mm;
+            font-size: 1.5em;
         }
 
         nav {
-            background-color: #444;
+            background-color: #ec971f;
             padding: 0.5em;
             display: flex;
             justify-content: center;
@@ -38,7 +49,7 @@
         }
 
         nav a:hover {
-            background-color: #555;
+            background-color: #d9534f;
         }
 
         section {
@@ -47,16 +58,80 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 60px; /* Ajusta el espacio superior para evitar solapamiento con el navegador fijo */
         }
 
         footer {
-            background-color: #333;
+            background-color: #ec971f;
             color: #fff;
             text-align: center;
-            padding: 1mm;
+            padding: 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        .product {
+            border: 1px solid #ec971f;
+            padding: 10px;
+            margin: 10px;
+            width: 30%;
+            background-color: #fff;
+        }
+
+        .product img {
+            max-width: 100%;
+            border: 2px solid #ec971f;
+            border-radius: 5px;
+        }
+
+        .product h2 {
+            color: #333;
+        }
+
+        .product p {
+            color: #666;
+        }
+
+        .product button {
+            background-color: #ec971f;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #d9534f;
+        }
+        .inventory-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .inventory-table th, .inventory-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .inventory-table th {
+            background-color: #ec971f;
+            color: #fff;
+        }
+        .whatsapp-icon {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        .whatsapp-link {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
@@ -65,7 +140,7 @@
     <header>
         <h1>Servicios de Electricidad</h1>
     </header>
-
+<div  id="compras" class="nav-menu">
     <nav id="compras" class="nav-menu">
         <a href="#inicio">Inicio</a>
         <a href="#nuestros-servicios">Nuestros Servicios</a>
@@ -74,6 +149,7 @@
         <a href="PaginaFact.html">Factura</a>
         <a href="#contacto">Contacto</a>
     </nav>
+</div>
     <script>
         // Obtén la barra de navegación
         var navbar = document.getElementById('compras');
@@ -91,39 +167,38 @@
             }
         };
     </script>
+
     <section id="inicio">
         <div>
             <h2>Bienvenido a Servicios de Electricidad</h2>
-            <p>Ofrecemos soluciones eléctricas de alta calidad para satisfacer sus necesidades.</p>
+            <p>Descubre soluciones eléctricas confiables y eficientes para satisfacer todas tus necesidades. En Servicios de Electricidad, nos dedicamos a proporcionar servicios de alta calidad, desde la instalación y mantenimiento hasta la resolución de problemas eléctricos. Nuestro equipo de expertos está comprometido con la excelencia y la seguridad, garantizando que cada proyecto se realice con precisión y profesionalismo.</p>
+            <p>Explora nuestra gama de servicios y productos eléctricos diseñados para hogares, empresas y proyectos industriales. Estamos aquí para iluminar tu camino y energizar tus ideas.</p>
         </div>
     </section>
 
     <section id="nuestros-servicios">
-       
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-            <h2>Nuestros Servicios</h2>
-           <div style="border: 1px solid #ccc; padding: 10px; margin: 10px; width: 30%;">
-                
-               <a href="https://www.playstation.com/es-bo/ps4/ps4-pro/">
-                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps4-pro-console-02-en-26oct18?$1600px--t$" alt="Play Station 5, Accesorios" style="max-width: 100%;">
+            <h2>Servicios Electricos</h2>
+            <div class="product">
+                <a href="https://www.endesyc.bo/">
+                    <img src="https://img.freepik.com/vector-premium/alumbrado-electricidad-servicio-mantenimiento-energetico-tecnico-obras-electricas-ilustracion_2175-8398.jpg?w=2000" alt="Play Station 5, Accesorios">
                 </a>
-                <h2 style="color: #333;">Play Station 4 Pro</h2>
-                <p style="color: #666;">Disfruta de los juegos taquilleros más recientes de PS4 y exclusivas de PlayStation en sorprendente 4K desde la consola PS4 Pro en tu televisor 4K, y transmite tu entretenimiento favorito con increíble detalle visual desde los servicios compatibles con 4K.</p>
-                <p style="color: #666;">Aumenta tu inmersión en los juegos de PS4 con velocidades de cuadro mejoradas* en una variedad de juegos mejorados para PS4 Pro, lo cual es posible gracias a la potencia adicional de la PS4 Pro.</p>
-                <p style="color: #f00;">Precio: $3000.00</p>
-                <button onclick="agregarAlCarrito()" style="background-color: #333; color: #fff; padding: 5px 10px;">Agregar al carrito</button>
+                <h2>Instalación Electrica Domestica</h2>
+                <p>Las instalaciones eléctricas domiciliarias son conexiones fundamentales ya que son la fuente de suministro eléctrico de nuestros hogares. Conocer los productos de una instalación nos da el conocimiento general para instalar un servicio acorde y, sobre todo, sin riesgos. Para poder llevar a cabo una o bien, para entender de qué manera se construye, te contamos los componentes y qué es lo más importante de una instalación eléctrica domiciliaria.</p>
+                <p>Precio: Bs 200.00</p>
+                <button onclick="agregarAlCarrito()">Agregar al carrito</button>
             </div>
-    
-            <div style="border: 1px solid #ccc; padding: 10px; margin: 10px; width: 30%;">
-                <a href="https://www.nike.com/mx/t/calzado-air-jordan-1-mid-f8W9ns/DQ8426-106">
-                    <img src="https://images.vegnonveg.com/resized/700X573/9624/air-jordan-1-mid-whitegym-red-black_1-64a7d89496d46.jpg" alt="Air Jordan 1 Mid" style="max-width: 100%;">
+
+            <div class="product">
+                <a href="https://www.tusocal.com/blog/instalaciones-electricas-industriales-como-funcionan/">
+                    <img src="https://www.tusocal.com/blog/wp-content/uploads/2019/10/instalaciones-electricas-industriales-1000x576.jpg" alt="Air Jordan 1 Mid">
                 </a>
-                <h2 style="color: #333;">Air Jordan 1 Mid</h2>
-                <p style="color: #666;">Inspirada en el AJ1 original, esta edición de corte mid mantiene el look icónico que te encanta, y los colores selectos y el cuero impecable le dan una identidad distintiva.</p>
-                <p style="color: #f00;">Precio: $3119.00</p>
-                <button onclick="agregarAlCarrito()" style="background-color: #333; color: #fff; padding: 5px 10px;">Agregar al carrito</button>
+                <h2>Instalación Electrica Industrial</h2>
+                <p>Las instalaciones eléctricas industriales son un conjunto de circuitos eléctricos que tienen la misión de conducir y distribuir la corriente eléctrica desde su punto de origen (el servicio eléctrico) hasta su salida.</p>
+                <p>Precio: $3119.00</p>
+                <button onclick="agregarAlCarrito()">Agregar al carrito</button>
             </div>
-    
+
             <!-- Agrega más productos siguiendo el mismo patrón -->
         </div>
     </section>
@@ -137,8 +212,32 @@
 
     <section id="inventario">
         <div>
-            <h2>Inventario</h2>
-            <p>Detalles sobre nuestro inventario de productos...</p>
+            <h2>Inventario de Productos Eléctricos</h2>
+            <table class="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lámpara LED</td>
+                        <td>Lámpara de luz LED de bajo consumo.</td>
+                        <td>$15.99</td>
+                        <td>100 unidades</td>
+                    </tr>
+                    <tr>
+                        <td>Cable Eléctrico</td>
+                        <td>Rollo de cable eléctrico resistente para instalaciones.</td>
+                        <td>$1.99/metro</td>
+                        <td>500 metros</td>
+                    </tr>
+                    <!-- Agrega más productos según sea necesario -->
+                </tbody>
+            </table>
         </div>
     </section>
 
@@ -149,10 +248,12 @@
         </div>
     </section>
 
-   <br> <br><br><br><footer>
+   <br><br><br><br><br><br><br><footer>
+    <a class="whatsapp-link" href="https://wa.me/59161136745?text=Hola%20amigo,%20quiero%20hablar%20un%20momento%20contigo!!" target="_blank">
+        <span class="whatsapp-icon">📱</span> Escribeme o Llamame!!
+    </a>
         <p>&copy; 2023 Servicios de Electricidad</p>
     </footer>
 
 </body>
 </html>
-

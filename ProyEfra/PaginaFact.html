@@ -8,17 +8,18 @@
         /* Estilos CSS aquí */
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fff8e1;
         }
 
         header {
-            background-color: #333;
+            background-color: #ec971f;
             color: #fff;
             text-align: center;
             padding: 1em;
+            font-size: 1.5em;
         }
 
         section {
@@ -30,7 +31,7 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: #ec971f;
             color: #fff;
             text-align: center;
             padding: 1em;
@@ -44,12 +45,10 @@
             justify-content: space-between;
         }
 
-        .invoice-details {
-            flex: 1;
-        }
-
+        .invoice-details,
         .invoice-items {
             flex: 1;
+            padding: 10px;
         }
 
         table {
@@ -66,6 +65,15 @@
 
         th {
             background-color: #f2f2f2;
+        }
+
+        .total {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .total strong {
+            color: #ec971f;
         }
     </style>
 </head>
@@ -111,6 +119,10 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <div class="total">
+                    <p><strong>Total:</strong> $X,XXX</p>
+                </div>
             </div>
 
         </div>
